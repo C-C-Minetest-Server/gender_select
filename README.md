@@ -16,7 +16,7 @@ The second returned value can only be either `"M"` or `"F"`. This value is for s
 Return only the second returned value of `gender_select.get_gender`.
 
 #### `gender_select.set_gender(player,genderMF[,neutral])`
-Set a player's preferred pronoun. the `genedr` field can either be `"M"`, `"F"`, or `nil`. If `nil`, the preferred gender of the player will be unset. If `neutral` is set, neutral pronoun will be used whenever possible.
+Set a player's preferred pronoun. the `gender` field can either be `"M"`, `"F"`, or `nil`. If `nil`, the preferred gender of the player will be unset. If `neutral` is set, neutral pronoun will be used whenever possible.
 
 #### `gender_select.open_gender_dialog(player)`
 Allow the player to choose their preferred pronoun by using a formspec. This only works if the [`flow`](https://content.minetest.net/packages/luk3yx/flow/) mod is installed and the player specified is online.
