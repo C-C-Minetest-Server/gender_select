@@ -38,5 +38,18 @@ Ideally, all changes should be backward-compactible, so mods should only check f
 #### `gender_select.gui`
 The `flow` GUI object of the dialog. Only present if `flow` is installed.
 
+### Example usecases
+#### In a dialogue
+Let's see the following example:
+
+> **\**A talking to B*\*:** __He__ is the person gave me an apple.
+
+We, obviously, should not assume the player is a male, as well as a female. With this mod, checks can be done, and proper pronouns can be shown.
+
+#### Player skin
+In Genshin Impact, the [player](genshin-impact.fandom.com/wiki/Traveler)'s skin is determined by the user's choice. As the player's [in-game sibling](https://genshin-impact.fandom.com/wiki/Traveler%27s_Sibling) must not be the same gender as the player's, the choice also determines the gender of the sibling.
+
+If a Minetest game is facing a similar situation, this mod can help to let the user choose the gender. The game can use `gender_select.get_gender_MF` (Male or Female) to determine the skin of the player and the gender of the sibling, and `gender_select.get_gender` (with the option to be neutral) to determine the pronoun.
+
 ### License
 All the codes are under MIT License. The textures are under public domain.
