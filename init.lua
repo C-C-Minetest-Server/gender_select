@@ -60,7 +60,6 @@ if minetest.get_modpath("flow") then
 		if not ctx.tab then
 			ctx.tab = "main"
 		end
-		print(dump(ctx))
 		if ctx.tab == "main" then
 			if not(ctx.genderMF) then
 				ctx.gender, ctx.genderMF = gender_select.get_gender(player)
@@ -90,7 +89,6 @@ if minetest.get_modpath("flow") then
 						gui.ImageButton { w=3,h=3,expand=true, align_h="centre",
 							texture_name = "gender_select_male.png",
 							on_event = function(player,ctx)
-								print("BtnM")
 								ctx.error = nil
 								ctx.genderMF = "M"
 								return true
@@ -102,7 +100,6 @@ if minetest.get_modpath("flow") then
 						gui.ImageButton { w=3,h=3,expand=true, align_h="centre",
 							texture_name = "gender_select_female.png",
 							on_event = function(player,ctx)
-								print("BtnF")
 								ctx.error = nil
 								ctx.genderMF = "F"
 								return true
