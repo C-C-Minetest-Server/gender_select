@@ -3,6 +3,7 @@ This mod is here to ask the user what their gender (identity) or the preferred p
 
 ### API
 In this section,
+
 * `player` can either be a name or a player object.
 * Unless otherwise specified, in case of failed calls, `false` will be returned.
 #### `gender_select.get_gender(player)`
@@ -22,6 +23,7 @@ Set a player's preferred pronoun. the `gender` field can either be `"M"`, `"F"`,
 Allow the player to choose their preferred pronoun by using a formspec. This only works if the [`flow`](https://content.minetest.net/packages/luk3yx/flow/) mod is installed and the player specified is online.
 
 If the dialogue is successfully opened, `true` is returned as the only returned value. If not, `false` is returned as the first value and one of the following is returned as the second:
+
 * `"DEPENDENCY"`: The `flow` mod is not installed. This will always be returned even if the player is offline.
 * `"OFFLINE"`: The player is offline, and so the dialogue cannot be opened. This also returns if the provided player field is not a valid one.
 
