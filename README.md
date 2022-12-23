@@ -4,13 +4,13 @@ This mod is here to ask the user what their gender (identity) or the preferred p
 ### API
 In this section,
 * `player` can either be a name or a player object.
-
+* Unless otherwise specified, in case of failed calls, `false` will be returned.
 #### `gender_select.get_gender(player)`
 Ask for a player's preferred pronoun.
 
-The first returned value can be `"M"` (Male), `"F"` (Female), or `"N"` (neutral pronouns preferred). If the player did not specified any, `"N"` will be returned as a fallback.
+The first returned value can be `"M"` (Male), `"F"` (Female), or `"N"` (neutral pronouns preferred). If the player did not specify any, `"N"` will be returned as a fallback.
 
-The second returned value can only be either `"M"` or `"F"`. This value is for situations that cannot make use of neutral pronouns, and modders should not use this method whenever possible. If the player did not specified any, `nil` will be returned. The mod has the responsiblity to handle such an exception.
+The second returned value can only be either `"M"` or `"F"`. This value is for situations that cannot make use of neutral pronouns, and modders should not use this method whenever possible. If the player did not specify any, `nil` will be returned. The mod has the responsibility to handle such an exception.
 
 #### `gender_select.get_gender_MF(player)`
 Return only the second returned value of `gender_select.get_gender`.
@@ -21,11 +21,11 @@ Set a player's preferred pronoun. the `gender` field can either be `"M"`, `"F"`,
 #### `gender_select.open_gender_dialog(player)`
 Allow the player to choose their preferred pronoun by using a formspec. This only works if the [`flow`](https://content.minetest.net/packages/luk3yx/flow/) mod is installed and the player specified is online.
 
-If the dialog is successfully opened, `true` is returned as the only returned value. If not, `false` is returned as the first value and one of the following is returned as the second:
+If the dialogue is successfully opened, `true` is returned as the only returned value. If not, `false` is returned as the first value and one of the following is returned as the second:
 * `"DEPENDENCY"`: The `flow` mod is not installed. This will always be returned even if the player is offline.
-* `"OFFLINE"`: The player is offline, and so the dialog cannot be opened. This also returns if the provided player field is not a valid one.
+* `"OFFLINE"`: The player is offline, and so the dialogue cannot be opened. This also returns if the provided player field is not a valid one.
 
-Because of the limitations of the API, we cannot notify other mods about the result of the dialog. Unless otherwise specified, in case of failed calls, `false` will be returned.
+Because of the limitations of the API, we cannot notify other mods about the result of the dialogue.
 
 ### Variables
 #### `gender_select.version`
