@@ -1,0 +1,15 @@
+# textdomain: gender_select
+Select Gender=選擇性別
+@1@n(Selected)=@1@n(已選擇)
+Male=男
+Female=女
+Use gender-neutral pronouns=使用性別中性代詞
+ERROR=錯誤
+Confirm=確定
+Gender set.=已設定性別。
+Set the gender and the preferred pronoun=設定性別和偏好代詞
+Dialog shown.=已顯示彈窗。
+Get the gender information of a player=取得玩家的性別資訊
+Could not find the gender of @1.=無法得到玩家 @1 的性別。
+@1 prefer gender-neutral pronouns, and @2 as a fallback.=@1 偏好性別中性代詞，@2 作爲備選。
+@1's gender is @2.=@1 是@2性。

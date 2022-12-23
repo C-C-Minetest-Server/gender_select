@@ -1,0 +1,15 @@
+# textdomain: gender_select
+Select Gender=
+@1@n(Selected)=
+Male=
+Female=
+Use gender-neutral pronouns=
+ERROR=
+Confirm=
+Gender set.=
+Set the gender and the preferred pronoun=
+Dialog shown.=
+Get the gender information of a player=
+Could not find the gender of @1.=
+@1 prefer gender-neutral pronouns, and @2 as a fallback.=
+@1's gender is @2.=
