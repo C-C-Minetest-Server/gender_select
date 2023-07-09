@@ -163,7 +163,7 @@ minetest.register_chatcommand("get_gender",{
 	privs = {basic_privs = true},
 	func = function(name,param)
 		local gender, genderMF = gender_select.get_gender(name)
-		if not gender then
+		if gender == "" then
 			return false, S("Could not find the gender of @1.",param)
 		end
 		local genderSTR = get_gender_string(genderMF)
